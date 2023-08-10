@@ -39,29 +39,29 @@ Changing the international plan and voice mail plan to 1s and 0s
 Dropped phone number column as it does not have any connection to churn column
  ## Data Visualization.
 ### Visualizing count of churned customers.
-![Alt text](/images/image.png)
+![Alt text](images/image.png)
 From the above graph, roughly 500 customers have churned.
 ### Total Day Calls of Churned customers vs Retained Customers.
  This observation suggests a positive correlation between call activity and customer retention within the context of SyriaTel's telecommunications services.
-![Alt text](/images/image-1.png)
+![Alt text](images/image-1.png)
 
 ### International plans status for both churned and retained customers.
 
-![Alt text](/images/image-2.png)
+![Alt text](images/image-2.png)
 Notable observation is that the proportion of customers with international plans (yes values) is relatively low in both plots – for both churned and retained customers.The low prevalence of international plans among both churned and retained customers suggests that a significant portion of SyriaTel's customer base may not be utilizing international calling services. This could indicate that international calling is not a significant factor influencing customer churn for SyriaTel.
 
 ### Average account length of customers
-![Alt text](/images/image-3.png)
+![Alt text](images/image-3.png)
 The average account length of approximately 101 suggests that the customer base at Syriatel exhibits a relatively stable relationship with the telecom provider. 
 
 ### churned customers
-![Alt text](/images/image-4.png)
+![Alt text](images/image-4.png)
 The comparison of churn rates between the industry average and Syriatel reveals intriguing insights. According to [smartlook.com](https://www.smartlook.com/blog/customer-churn-retention/#:~:text=The%20average%20churn%20rate%20in,take%20action%20to%20reduce%20it.), the average churn rate within the industry stands at 22%, contrasting with Syriatel's notably lower churn rate of 14%.
 ### customer service calls'
-![Alt text](/images/image-5.png)
+![Alt text](images/image-5.png)
 
 ### Average charge
-![Alt text](/images/image-6.png)
+![Alt text](images/image-6.png)
 The observation that day time has the highest average charge despite having a lower average number of minutes compared to evening and night suggests a potential area of concern that could impact customer churn.
 ## Data Modeling.
 * We first convert the target column to binary.
@@ -76,7 +76,7 @@ The observation that day time has the highest average charge despite having a lo
 
 As observed from the provided F1 score of 0.36, the model's performance is notably subpar in terms of both precision and recall.
 This suggests a lack of effectiveness in correctly identifying positive instances and highlights the potential influence of class imbalance.
-![Alt text](/images/image-7.png)
+![Alt text](images/image-7.png)
 
 As evident from the depicted ROC Curve, the model demonstrates effective performance with an ROC AUC score of 0.83. However, it's important to note that the model faces class imbalance, where the majority class dominates and doesn't churn. Consequently, the model is susceptible to high bias, potentially favoring the majority class in its predictions.
 ### Performing class balancing.
@@ -102,7 +102,7 @@ weighted avg       0.94      0.94      0.94       667
 Best Parameters: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 15}
 
 * We do feature importance analysis for understanding and improving our model. It ultimately leads to a more effective and actionable model for your project's objectives.
-![Alt text](/images/image-10.png)
+![Alt text](images/image-8.png)
 
 ### Decision Tree Classifier.
 * Classifier with default parameters.
@@ -179,7 +179,7 @@ Training Accuracy: 96.92%
 Testing accuracy: 94.9%
 
 ### Accuracy score
-![Alt text](/images/image-9.png)
+![Alt text](images/image-9.png)
 
 ## Conclusion
 The best Model was the XGBoost model which showed a high test accuracy and did not overfit the training data.
@@ -194,3 +194,6 @@ In conclusion, the predictive modeling efforts aimed at forecasting customer chu
 **Proactive Customer Support:** Leverage the predictive model to proactively identify customers with a higher likelihood of churn and offer them dedicated customer support. Timely intervention through personalized assistance, such as troubleshooting technical issues or addressing service inquiries, can help resolve concerns and improve customer satisfaction.
 
 **Daytime Call Charge Optimization:**  Given the observation that daytime call charges are relatively higher compared to evening and night charges, Syriatel could consider a strategic reduction in daytime call charges. This reduction could be designed to align more closely with the actual average call duration during daytime hours. By offering more competitive and cost-effective daytime call rates, Syriatel can incentivize customers to utilize its services during this period, potentially leading to increased usage and customer retention. Additionally, transparent communication about the reduced charges can enhance customer perception of value, further encouraging loyalty and reducing the likelihood of churn.
+
+## Slides Link
+https://www.canva.com/design/DAFrFIAlIUQ/rln3eJIW1mF51ZXBC7NGxg/edit
