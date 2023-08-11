@@ -196,4 +196,4 @@ In conclusion, the predictive modeling efforts aimed at forecasting customer chu
 **Daytime Call Charge Optimization:**  Given the observation that daytime call charges are relatively higher compared to evening and night charges, Syriatel could consider a strategic reduction in daytime call charges. This reduction could be designed to align more closely with the actual average call duration during daytime hours. By offering more competitive and cost-effective daytime call rates, Syriatel can incentivize customers to utilize its services during this period, potentially leading to increased usage and customer retention. Additionally, transparent communication about the reduced charges can enhance customer perception of value, further encouraging loyalty and reducing the likelihood of churn.
 
 ## Slides Link
-https://www.canva.com/design/DAFrFIAlIUQ/rln3eJIW1mF51ZXBC7NGxg/edit
+https://www.canva.com/design/DAFrFIAlIUQ/rln3eJIW1mF51ZXBC7NGxg/edit?utm_content=DAFrFIAlIUQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
